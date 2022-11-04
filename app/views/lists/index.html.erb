@@ -3,6 +3,9 @@
 <% @lists.each do |list| %>
 
 <p>タイトル</p>
-<apan><%= list.title %></apan>
+
+<apan>
+  <%= link_to list.title, lists_path(list.id) %>
+</apan>
 
 <% end %>
